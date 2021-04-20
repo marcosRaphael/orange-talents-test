@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>"pt-BR"</title>
+</head>
+<body>
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputName">Nome</label>
+            <input type="name" class="form-control" id="inputName" placeholder="Nome" readonly>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email" readonly>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputcpf">CPF</label>
+            <input type="cpf" class="form-control" id="inputcpf" placeholder="cpf" readonly>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputbirthDate">Data de nascimento</label>
+            <input  class="form-control" id="inputbirthDate" placeholder="data de nascimento" readonly>
+        </div>
+    </div>
+</form>
+<div class="container">
+    <div class="row">
+        <div class="col text-center">
+            Endereços Cadastrados
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col text-center">
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>Cep</th>
+                    <th>Estado</th>
+                    <th>Cidade</th>
+                    <th>Bairro</th>
+                    <th>Logradouro</th>
+                    <th>numero</th>
+                    <th>complemento</th>
+
+                </tr>
+                </thead>
+                <tbody id="addresses" >
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</div>
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputCep">CEP</label>
+            <input type="cep" class="form-control" id="inputCep" placeholder="CEP">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputEstado">Estado</label>
+            <input type="estado" class="form-control" id="inputEstado" placeholder="Estado">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputCidade">Cidade</label>
+            <input type="cidade" class="form-control" id="inputCidade" placeholder="Cidade">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputBairro">Bairro</label>
+            <input  class="form-control" id="inputBairro" placeholder="Bairro">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-10">
+            <label for="inputLogradouro">Logradouro</label>
+            <input type="logradouro" class="form-control" id="inputLogradouro" placeholder="Logradouro">
+        </div>
+        <div class="form-group col-md-2">
+            <label for="inputNumero">Número</label>
+            <input  class="form-control" id="inputNumero" placeholder="Número">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-12">
+            <label for="inputComplemento">Complemento</label>
+            <input type="Complemento" class="form-control" id="inputComplemento" placeholder="Complemento">
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <button type="button" class="btn btn-primary" onclick= onFormClick() >Adicionar novo endereço</button>
+            </div>
+        </div>
+    </div>
+
+</form>
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+<script type="text/javascript" src="/js/AddressRegister.js" ></script>
+</body>
+</html>
