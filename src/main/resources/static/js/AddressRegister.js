@@ -8,6 +8,23 @@
 
 $(document).ready(function () {
 
+$('#inputCep').on('input', function() {
+    var cep = $('#inputCep')[0].value;
+    cep.replace("-", "");
+    if(cep.length == 9) {
+        $.ajax({
+                type: 'GET',
+                url: "http://localhost:8080/viacep/consult/" + cep,
+                success: function(data) {
+
+                                $('#inputLogradouro')[0].value = data['logradouro'] ?? "";
+                                $('#inputComplemento')[0].value = data['complemento'] ?? "";
+                                $('#inputBairro')[0].value = data['bairro'] ?? "";
+                }
+            });
+    }
+});
+
  $('#inputCep').mask('00000-000');
 
     $.ajax({

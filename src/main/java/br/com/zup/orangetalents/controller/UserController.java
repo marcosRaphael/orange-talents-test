@@ -1,5 +1,6 @@
 package br.com.zup.orangetalents.controller;
 
+import br.com.zup.orangetalents.client.ViaCepClient;
 import br.com.zup.orangetalents.dto.AddressDTO;
 import br.com.zup.orangetalents.dto.UserDTO;
 import br.com.zup.orangetalents.dto.UserWithAdressesDTO;

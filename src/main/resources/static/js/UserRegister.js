@@ -37,7 +37,7 @@
               data:  JSON.stringify(data),
               success: function(data) {
                 alert("Usuário cadastrado com sucesso")
-                window.location = '/user/'+ data +'/address';
+                window.location = '/usuario/'+ data +'/enderecos';
               },
               error: function(error) {
                 alert(error['responseJSON']['fieldsMessage'])
